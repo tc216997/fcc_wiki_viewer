@@ -1,0 +1,153 @@
+body{
+  background-color: #6198fd;  
+}
+
+.fa{
+  vertical-align: middle;
+  margin-bottom: 10px;
+}
+
+button {
+  background-color: inherit;
+  border: none;
+  outline: none;
+  margin-left: 15px;
+  margin-top: 6px;
+}
+
+form{
+  margin-top: 100px;
+}
+
+input[type=search] {
+  font-family: Arial;
+  color: grey;
+  padding-left: 10px;
+  padding-right: 10px;
+  border: solid 4px #39122f;
+	width: 30px;
+  height: 45px;
+  border-radius: 10em;
+	-webkit-border-radius: 10em;
+	-moz-border-radius: 10em;
+  transition: all 2s;
+	-webkit-transition: all 2s;
+	-moz-transition: all 2s;
+	transition: all 2s;
+	-webkit-appearance: textfield;
+  -moz-appearance: textfield;
+  box-sizing: content-box;
+	-webkit-box-sizing: content-box;
+  -moz-box-sizing: content-box;
+	font-size: 175%;
+  outline: none;
+  background-color: white;
+}
+
+
+input[type=search]:focus {
+  color: black;
+  padding-left: 15px;
+	width: 300px;
+	background-color: #fff;	
+  box-shadow: 0 0 5px rgba(109,207,246,.5);
+	-webkit-box-shadow: 0 0 5px rgba(109,207,246,.5);
+	-moz-box-shadow: 0 0 5px rgba(109,207,246,.5);
+}
+.error{
+  border: 1px solid black;
+  height: auto;
+  margin-bottom: 75px;
+  padding: 15px;
+  padding-top: 15px;
+  background-color: white;
+  display: none;
+}
+
+.results {
+  border: 1px solid black;
+  height: auto;
+  margin-bottom: 75px;
+  padding: 15px;
+  padding-top: 0px;
+  background-color: white;
+  display: none;
+}
+
+h4{
+  font-weight: bold;
+}
+
+a, a:visited, a:hover, a:active {
+  color: inherit;
+  text-decoration: none !important;
+}
+
+#main{
+  margin-top: 30px;
+}
+
+
+/**Loading animation CSS below
+**/
+
+.loader,
+.loader:before,
+.loader:after {
+  background: #ffffff;
+  -webkit-animation: load1 1s infinite ease-in-out;
+  animation: load1 1s infinite ease-in-out;
+  width: 1em;
+  height: 4em;
+}
+.loader:before,
+.loader:after {
+  position: absolute;
+  top: 0;
+  content: '';
+}
+.loader:before {
+  left: -1.5em;
+  -webkit-animation-delay: -0.32s;
+  animation-delay: -0.32s;
+}
+.loader {
+  color: #ffffff;
+  text-indent: -9999em;
+  margin: auto;
+  position: relative;
+  font-size: 11px;
+  -webkit-transform: translateZ(0);
+  -ms-transform: translateZ(0);
+  transform: translateZ(0);
+  -webkit-animation-delay: -0.16s;
+  animation-delay: -0.16s;
+}
+.loader:after {
+  left: 1.5em;
+}
+@-webkit-keyframes load1 {
+  0%,
+  80%,
+  100% {
+    box-shadow: 0 0;
+    height: 4em;
+  }
+  40% {
+    box-shadow: 0 -2em;
+    height: 5em;
+  }
+}
+@keyframes load1 {
+  0%,
+  80%,
+  100% {
+    box-shadow: 0 0;
+    height: 4em;
+  }
+  40% {
+    box-shadow: 0 -2em;
+    height: 5em;
+  }
+}
+
